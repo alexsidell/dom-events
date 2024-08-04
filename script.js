@@ -30,10 +30,11 @@ function closeSignUp() {
     popUpContainerEl.classList.add("hidden")
 }
 
-function getEmail() {
+function getEmail(e) {
     let emailEl = document.getElementById("email")
     console.log(emailEl.value)
     closeSignUp()
+    e.preventDefault()
 }
 
 
