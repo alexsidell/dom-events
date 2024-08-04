@@ -1,0 +1,242 @@
+body {
+    font-family: 'Lora', serif;
+    margin: 0;
+  }
+  
+  h2 {
+    font-family: 'Staatliches', cursive;
+    font-size: 90px;
+    text-align: center;
+  }
+
+  p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    padding: 0 2rem;
+  }
+  
+  main {
+    align-items: center;
+    background-image: linear-gradient(45deg,  #004c99, #009994);
+    color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+  }
+
+  .sign-up {
+    position: absolute;
+    left: 20%;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 60%;
+    height: fit-content;
+    background-color: #f9f9f9;
+  }
+
+  .sign-up-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+  }
+  
+  .sign-up-container h2 {
+    background: linear-gradient(45deg,  #004c99, #009994);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    margin-top: 2.5rem;
+    margin-bottom: 0; 
+  }
+  
+  .close-sign-up {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    height: 30px;
+    width: 30px;
+  }
+
+  .newsletter-sign-up {
+    padding-bottom:3rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .pop-up-container {
+    background-color: rgba(128, 0, 128, 0.30);
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .controls {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .menu-control {
+    fill: #fff;
+    margin: 25px;
+  }
+  
+  .menu {
+    background-color: rgba(7,34,53,1);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    opacity: 0;
+    overflow-y: scroll;
+    padding: 15px 30px;
+    position: fixed;
+    transition: all 0.35s ease-in-out;
+    transform: translateX(100%);
+    z-index: 10;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  #email {
+    border: purple solid 1px;
+    border-radius: 2px;
+    font-size: 18px;
+    width: 150%;
+    height: 1.5rem;
+    padding:1rem;
+  }
+
+  .submit-button {
+    font-size: 24px;
+    color:#f9f9f9;
+    background: linear-gradient(45deg,  #004c99, #009994);
+    border: unset;
+    padding: 1rem;
+    border: #f9f9f9 solid 3px
+  }
+
+  .submit-button:hover {
+    background: linear-gradient(45deg,  #004c99, #009994);
+    background-clip: border-box;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    border-image: linear-gradient(45deg,  #004c99, #009994) 30%;
+    border-width: 3px;
+    border-style: solid;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .menu-open {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+  .menu a, .menu a:focus, .menu a:visited {
+    color: white;
+    display: block;
+    font-size: 50px;
+    margin: 25px auto;
+    text-align: center;
+    text-decoration: none;
+  }
+  .menu-close {
+    background-color: white;
+    color: darkred;
+  }
+
+  /* Styles for mission page*/
+
+  .outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    gap: 2rem;
+    margin-bottom: 4rem;
+  }
+
+  .inner-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .inner-container img {
+    aspect-ratio: 1/1;
+    max-width:100%;
+    object-fit: cover;
+    border:#f9f9f9 solid 2px;
+  }
+
+  header a {
+    font-size:18px;
+    font-family: 'Staatliches', cursive;
+    text-align: center;
+    padding: 0.5rem;
+    margin: 1.5rem;
+    color: #f9f9f9;
+
+  }
+
+  header {
+    background-color: purple;
+    padding: 1rem;
+  }
+
+  .mission {
+    background-image: linear-gradient(45deg,  #004c99, #009994);
+  }
+
+  .content {
+    position: relative;
+    max-width: 30%;
+    aspect-ratio: 100/97;
+    border: 2px;
+    align-content: center;
+  }
+
+  .content-overlay {
+    position: absolute;
+    top: 2px;
+    bottom: -2px;
+    left: 2px;
+    right: -2px;
+    max-height: 100%;
+    aspect-ratio: 1/1;
+    background-color: rgb(0,0,0,0);
+    transition: background-color 0.2s ease-in-out 0s;
+    color: #f9f9f9;
+    font-size: 24px;
+    font-family: 'Staatliches', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content-overlay:hover {
+    background-color: rgb(128,0,128,0.3);
+  }
+
+  .mission-container {
+    background-color: #f9f9f9;
+    width: fit-content;
+    padding: 3rem;
+  }
